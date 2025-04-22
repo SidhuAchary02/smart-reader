@@ -102,6 +102,7 @@ function Popup() {
 </body>
 </html>`;
 
+
           const blob = new Blob([readerHtml], { type: "text/html" });
           const url = URL.createObjectURL(blob);
           chrome.tabs.create({ url });
@@ -137,7 +138,7 @@ function Popup() {
         </>
       ) : (
         <p>Navigate to a Medium article to use this extension</p>
-      )}
+      )} 
       <p className="mt-3 text-sm text-gray-600">{status}</p>
     </div>
   );
